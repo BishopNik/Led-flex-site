@@ -1,268 +1,170 @@
-<!-- @format -->
-
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LED Flex Panels | Transparent LED Displays</title>
-		<meta
-			name="description"
-			content="Sprzedaż i montaż elastycznych transparentnych paneli LED w Polsce i Austrii. Reklama LED na witrynach, elewacjach, eventach i showroomach."
-		/>
+		<meta name="theme-color" content="#070b10" />
+		<title>LEDFlex — transparentne ekrany LED</title>
+		<meta name="description" content="Projektowanie, sprzedaż i montaż elastycznych transparentnych paneli LED w Polsce, Austrii i UE." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container nav">
-				<a class="logo" href="#top"><span>LED</span>Flex</a>
-				<nav class="menu">
+				<a class="logo" href="#top" aria-label="LEDFlex"><i></i>LED<span>FLEX</span></a>
+				<nav class="menu" aria-label="Główna nawigacja">
 					<a href="#about" data-i18n="navAbout">O panelach</a>
 					<a href="#works" data-i18n="navWorks">Realizacje</a>
 					<a href="#process" data-i18n="navProcess">Jak pracujemy</a>
-					<a href="#contact" data-i18n="navContact">Wycena</a>
+					<a href="#faq" data-i18n="navFaq">FAQ</a>
 				</nav>
-				<div class="lang-switch">
-					<button class="lang" data-lang="en">EN</button>
-					<button class="lang active" data-lang="pl">PL</button>
-					<button class="lang" data-lang="de">DE</button>
+				<div class="nav-actions">
+					<div class="lang-switch" aria-label="Language">
+						<button class="lang" data-lang="en">EN</button><button class="lang active" data-lang="pl">PL</button><button class="lang" data-lang="de">DE</button>
+					</div>
+					<a class="nav-cta" href="#contact" data-i18n="navContact">Wycena</a>
 				</div>
 			</div>
 		</header>
 
 		<main id="top">
 			<section class="hero">
+				<div class="hero-ambient one"></div><div class="hero-ambient two"></div>
 				<div class="container hero-grid">
-					<div class="hero-content">
-						<p class="eyebrow" data-i18n="heroEyebrow">Polska • Austria • Europa</p>
-						<h1 data-i18n="heroTitle">
-							Elastyczne transparentne panele LED dla nowoczesnej reklamy
-						</h1>
-						<p class="hero-text" data-i18n="heroText">
-							Projektujemy, dostarczamy i montujemy lekkie panele LED na witrynach,
-							szklanych fasadach, stoiskach targowych, showroomach i eventach.
-						</p>
+					<div class="hero-content reveal">
+						<p class="eyebrow"><span></span><span data-i18n="heroEyebrow">Obraz, który nie zasłania przestrzeni</span></p>
+						<h1 data-i18n="heroTitle">Transparentna technologia. <em>Widoczny efekt.</em></h1>
+						<p class="hero-text" data-i18n="heroText">Projektujemy i montujemy elastyczne ekrany LED, które zamieniają szkło w dynamiczny nośnik premium — bez utraty światła i widoku.</p>
 						<div class="hero-actions">
-							<a class="btn primary" href="#contact" data-i18n="heroBtn"
-								>Zamów wycenę</a
-							>
-							<a class="btn ghost" href="#works" data-i18n="heroBtn2"
-								>Zobacz przykłady</a
-							>
+							<a class="btn primary" href="#contact"><span data-i18n="heroBtn">Bezpłatna wycena</span><b>↗</b></a>
+							<a class="btn ghost" href="#works" data-i18n="heroBtn2">Zobacz realizacje</a>
 						</div>
-						<div class="stats">
-							<div>
-								<strong>24/7</strong
-								><span data-i18n="stat1">widoczność reklamy</span>
-							</div>
-							<div>
-								<strong>PL/AT</strong
-								><span data-i18n="stat2">montaż na miejscu</span>
-							</div>
-							<div>
-								<strong>LED</strong
-								><span data-i18n="stat3">energooszczędna technologia</span>
-							</div>
+						<div class="trust-row">
+							<div><strong>90%</strong><span data-i18n="stat1">transparentności</span></div>
+							<div><strong>24/7</strong><span data-i18n="stat2">widoczności</span></div>
+							<div><strong>360°</strong><span data-i18n="stat3">możliwości formy</span></div>
 						</div>
 					</div>
-					<div class="hero-card">
-						<div class="led-frame">
-							<div class="led-screen">
-								<span>LED FLEX</span>
-								<small data-i18n="screenText">Transparent display</small>
-							</div>
-						</div>
-						<div class="floating-card top" data-i18n="float1">Witryny sklepowe</div>
-						<div class="floating-card bottom" data-i18n="float2">
-							Eventy i showroomy
-						</div>
+					<div class="hero-visual reveal">
+						<img src="./assets/images/boutique-led.png" alt="Transparentny ekran LED w witrynie ekskluzywnego butiku" />
+						<div class="hero-shade"></div>
+						<div class="hero-visual-copy"><span>LED FLEX</span><small data-i18n="screenText">Transparent display systems</small></div>
+						<div class="hero-chip top"><i></i><span data-i18n="float1">Do 6000 nit</span></div>
+						<div class="hero-chip bottom"><span data-i18n="float2">Ultralekka konstrukcja</span></div>
 					</div>
 				</div>
+				<div class="scroll-cue"><span></span><small>SCROLL</small></div>
 			</section>
 
-			<section id="about" class="section">
-				<div class="container split">
-					<div>
-						<p class="eyebrow" data-i18n="aboutEyebrow">Technologia</p>
-						<h2 data-i18n="aboutTitle">
-							Co to są elastyczne transparentne panele LED?
-						</h2>
-					</div>
-					<p class="section-text" data-i18n="aboutText">
-						To cienkie i lekkie moduły LED, które można instalować na szkle lub
-						konstrukcjach reklamowych. Pozwalają wyświetlać dynamiczne treści, a
-						jednocześnie zachować efekt przejrzystości powierzchni.
-					</p>
+			<section id="about" class="section about-section">
+				<div class="container split reveal">
+					<div><p class="eyebrow dark-ink"><span></span><span data-i18n="aboutEyebrow">Technologia</span></p><h2 data-i18n="aboutTitle">Czym są elastyczne transparentne panele LED?</h2></div>
+					<p class="section-text" data-i18n="aboutText">To cienkie, lekkie moduły montowane bezpośrednio na szkle lub konstrukcji. Wyświetlają jasne, dynamiczne treści, pozostając niemal niewidoczne po wyłączeniu.</p>
 				</div>
-				<div class="container cards">
-					<article class="card">
-						<div class="icon"></div>
-						<h3 data-i18n="feature1Title">Sprzedaż paneli</h3>
-						<p data-i18n="feature1Text">
-							Dobieramy typ paneli, rozdzielczość, jasność i system sterowania pod
-							konkretny obiekt.
-						</p>
+				<div class="container feature-grid">
+					<article class="feature-card reveal">
+						<div class="feature-image"><img src="./assets/images/flexible-panel.jpg" alt="Elastyczny panel LED wyginany dłonią" loading="lazy" /><span>01</span></div>
+						<div class="feature-copy"><h3 data-i18n="feature1Title">Elastyczność formy</h3><p data-i18n="feature1Text">Ekran dopasowuje się do łuków, narożników i niestandardowych powierzchni.</p></div>
 					</article>
-					<article class="card">
-						<div class="icon"></div>
-						<h3 data-i18n="feature2Title">Profesjonalny montaż</h3>
-						<p data-i18n="feature2Text">
-							Montaż na witrynach, ścianach szklanych, ekspozycjach, konstrukcjach
-							eventowych i reklamowych.
-						</p>
+					<article class="feature-card reveal">
+						<div class="feature-image"><img src="./assets/images/store-window.jpg" alt="Transparentny ekran LED na szklanej witrynie" loading="lazy" /><span>02</span></div>
+						<div class="feature-copy"><h3 data-i18n="feature2Title">Prawdziwa transparentność</h3><p data-i18n="feature2Text">Światło, ekspozycja i architektura pozostają widoczne przez aktywny ekran.</p></div>
 					</article>
-					<article class="card">
-						<div class="icon"></div>
-						<h3 data-i18n="feature3Title">Konfiguracja treści</h3>
-						<p data-i18n="feature3Text">
-							Pomagamy uruchomić system, przygotować formaty reklam i przeszkolić
-							obsługę.
-						</p>
+					<article class="feature-card reveal">
+						<div class="feature-image"><img src="./assets/images/event-display.png" alt="Spektakularna instalacja LED podczas wydarzenia" loading="lazy" /><span>03</span></div>
+						<div class="feature-copy"><h3 data-i18n="feature3Title">Efekt bez kompromisów</h3><p data-i18n="feature3Text">Wysoka jasność i intensywny kolor przy minimalnej wadze konstrukcji.</p></div>
 					</article>
 				</div>
 			</section>
 
-			<section class="section dark">
-				<div class="container">
-					<p class="eyebrow" data-i18n="whyEyebrow">Zastosowanie</p>
-					<h2 data-i18n="whyTitle">Gdzie sprawdzają się panele LED?</h2>
-					<div class="use-grid">
-						<div data-i18n="use1">Witryny sklepowe i galerie handlowe</div>
-						<div data-i18n="use2">Restauracje, kluby i hotele</div>
-						<div data-i18n="use3">Targi, eventy i scenografie</div>
-						<div data-i18n="use4">Showroomy samochodowe i premium</div>
-						<div data-i18n="use5">Biura sprzedaży i recepcje</div>
-						<div data-i18n="use6">Fasady szklane i ekspozycje</div>
+			<section class="statement-section">
+				<div class="statement-track" aria-hidden="true"><span>RETAIL • EVENTS • SHOWROOMS • ARCHITECTURE • RETAIL • EVENTS • SHOWROOMS • ARCHITECTURE •</span></div>
+				<div class="container statement-grid">
+					<div class="statement-copy reveal"><p class="eyebrow"><span></span><span data-i18n="whyEyebrow">Zastosowanie</span></p><h2 data-i18n="whyTitle">Jedna technologia.<br />Nieskończenie wiele scen.</h2><p data-i18n="whyText">Od subtelnego komunikatu na witrynie po wielkoformatową scenografię — projektujemy rozwiązanie wokół przestrzeni i celu marki.</p></div>
+					<div class="use-list reveal">
+						<div><b>01</b><span data-i18n="use1">Witryny i galerie handlowe</span><i>↗</i></div>
+						<div><b>02</b><span data-i18n="use2">Hotele i restauracje</span><i>↗</i></div>
+						<div><b>03</b><span data-i18n="use3">Targi i wydarzenia</span><i>↗</i></div>
+						<div><b>04</b><span data-i18n="use4">Showroomy premium</span><i>↗</i></div>
+						<div><b>05</b><span data-i18n="use5">Biura i recepcje</span><i>↗</i></div>
 					</div>
 				</div>
 			</section>
 
-			<section id="works" class="section">
-				<div class="container section-head">
-					<div>
-						<p class="eyebrow" data-i18n="worksEyebrow">Realizacje / przykłady</p>
-						<h2 data-i18n="worksTitle">Przykłady zastosowań</h2>
+			<section id="works" class="section works-section">
+				<div class="container section-head reveal">
+					<div><p class="eyebrow dark-ink"><span></span><span data-i18n="worksEyebrow">Application examples</span></p><h2 data-i18n="worksTitle">Technologia w przestrzeni</h2></div>
+					<div class="gallery-nav"><button class="gallery-prev" aria-label="Poprzednie zdjęcie">←</button><button class="gallery-next" aria-label="Następne zdjęcie">→</button></div>
+				</div>
+				<div class="gallery-wrap">
+					<div class="gallery" id="gallery" tabindex="0">
+						<button class="work wide" data-full="./assets/images/boutique-led.png"><img src="./assets/images/boutique-led.png" alt="Transparentna instalacja LED w butiku" loading="lazy" /><span><small>RETAIL / 2026</small><strong data-i18n="work1">Witryna premium</strong></span><i>+</i></button>
+						<button class="work" data-full="./assets/images/transparent-aquarium.png"><img src="./assets/images/transparent-aquarium.png" alt="Narożny transparentny ekran LED" loading="lazy" /><span><small>HOSPITALITY</small><strong data-i18n="work2">Szklany ekran 90°</strong></span><i>+</i></button>
+						<button class="work" data-full="./assets/images/auto-showroom-led.png"><img src="./assets/images/auto-showroom-led.png" alt="Transparentny ekran w salonie samochodowym" loading="lazy" /><span><small>SHOWROOM</small><strong data-i18n="work3">Automotive experience</strong></span><i>+</i></button>
+						<button class="work" data-full="./assets/images/museum-ring.png"><img src="./assets/images/museum-ring.png" alt="Okrągły ekran LED w muzeum" loading="lazy" /><span><small>CULTURE</small><strong data-i18n="work4">Instalacja muzealna</strong></span><i>+</i></button>
+						<button class="work" data-full="./assets/images/event-display.png"><img src="./assets/images/event-display.png" alt="Elastyczna scenografia LED" loading="lazy" /><span><small>EVENT</small><strong data-i18n="work5">Scenografia 360°</strong></span><i>+</i></button>
+						<button class="work" data-full="./assets/images/led-cube.jpg"><img src="./assets/images/led-cube.jpg" alt="Sześcienny wyświetlacz LED" loading="lazy" /><span><small>OFFICE</small><strong data-i18n="work6">Ekran narożny</strong></span><i>+</i></button>
 					</div>
-					<p data-i18n="worksText">
-						Poniżej możesz później wstawić zdjęcia wykonanych prac. Na start
-						zostawiliśmy estetyczne miejsca pod portfolio.
-					</p>
 				</div>
-				<div class="container gallery">
-					<div class="work"><span data-i18n="work1">Witryna sklepu</span></div>
-					<div class="work"><span data-i18n="work2">Ściana LED w showroomie</span></div>
-					<div class="work"><span data-i18n="work3">Stoisko targowe</span></div>
-					<div class="work"><span data-i18n="work4">Restauracja / klub</span></div>
-				</div>
+				<p class="gallery-hint" data-i18n="galleryHint">Przeciągnij, aby zobaczyć więcej • Kliknij, aby powiększyć</p>
 			</section>
 
-			<section id="process" class="section soft">
-				<div class="container section-head">
-					<div>
-						<p class="eyebrow" data-i18n="processEyebrow">Proces</p>
-						<h2 data-i18n="processTitle">Jak pracujemy?</h2>
-					</div>
-				</div>
-				<div class="container steps">
-					<div class="step">
-						<strong>01</strong>
-						<h3 data-i18n="step1Title">Kontakt i potrzeby</h3>
-						<p data-i18n="step1Text">
-							Wysyłasz wymiary, lokalizację, zdjęcia miejsca i oczekiwany efekt.
-						</p>
-					</div>
-					<div class="step">
-						<strong>02</strong>
-						<h3 data-i18n="step2Title">Dobór rozwiązania</h3>
-						<p data-i18n="step2Text">
-							Proponujemy typ paneli, konstrukcję, sterowanie i orientacyjną cenę.
-						</p>
-					</div>
-					<div class="step">
-						<strong>03</strong>
-						<h3 data-i18n="step3Title">Montaż i uruchomienie</h3>
-						<p data-i18n="step3Text">
-							Dostarczamy, montujemy, konfigurujemy ekran i przekazujemy instrukcję
-							obsługi.
-						</p>
+			<section id="process" class="section process-section">
+				<div class="container process-layout">
+					<div class="process-intro reveal"><p class="eyebrow"><span></span><span data-i18n="processEyebrow">Od pomysłu do światła</span></p><h2 data-i18n="processTitle">Bierzemy odpowiedzialność za cały proces.</h2><p data-i18n="processText">Dobieramy technologię, projektujemy układ, montujemy i uruchamiamy treści. Jeden zespół, jeden standard jakości.</p><a href="#contact" data-i18n="processLink">Porozmawiajmy o projekcie ↗</a></div>
+					<div class="steps reveal">
+						<article><strong>01</strong><div><h3 data-i18n="step1Title">Konsultacja</h3><p data-i18n="step1Text">Poznajemy przestrzeń, cel i oczekiwany efekt.</p></div></article>
+						<article><strong>02</strong><div><h3 data-i18n="step2Title">Projekt i wycena</h3><p data-i18n="step2Text">Dobieramy moduły, sterowanie oraz sposób montażu.</p></div></article>
+						<article><strong>03</strong><div><h3 data-i18n="step3Title">Montaż</h3><p data-i18n="step3Text">Instalujemy system i dbamy o każdy detal wykończenia.</p></div></article>
+						<article><strong>04</strong><div><h3 data-i18n="step4Title">Start i wsparcie</h3><p data-i18n="step4Text">Konfigurujemy treści i szkolimy zespół.</p></div></article>
 					</div>
 				</div>
 			</section>
 
-			<section id="contact" class="section contact-section">
+			<section id="faq" class="section faq-section">
+				<div class="container faq-layout">
+					<div class="faq-intro reveal"><p class="eyebrow dark-ink"><span></span><span>FAQ</span></p><h2 data-i18n="faqTitle">Najczęstsze pytania</h2><p data-i18n="faqText">Krótko o tym, co zwykle warto wiedzieć przed pierwszą wyceną.</p></div>
+					<div class="faq-list reveal">
+						<details open><summary><span data-i18n="faq1q">Czy ekran ogranicza widoczność przez szybę?</span><i></i></summary><p data-i18n="faq1a">Nieznacznie. W zależności od modelu transparentność sięga około 90%, więc wnętrze i światło dzienne pozostają widoczne.</p></details>
+						<details><summary><span data-i18n="faq2q">Czy panel można dopasować do łuku?</span><i></i></summary><p data-i18n="faq2a">Tak. Elastyczne moduły pozwalają tworzyć łuki, narożniki, cylindry i niestandardowe formy.</p></details>
+						<details><summary><span data-i18n="faq3q">Jak wygląda sterowanie treścią?</span><i></i></summary><p data-i18n="faq3a">Materiały można planować i aktualizować z komputera lub chmury. Przy uruchomieniu konfigurujemy system i szkolimy obsługę.</p></details>
+						<details><summary><span data-i18n="faq4q">Ile trwa realizacja?</span><i></i></summary><p data-i18n="faq4a">Standardowo od 3 do 6 tygodni od akceptacji projektu. Termin zależy od wielkości i stopnia indywidualizacji.</p></details>
+						<details><summary><span data-i18n="faq5q">Czy zapewniacie montaż poza Polską?</span><i></i></summary><p data-i18n="faq5a">Tak. Realizujemy projekty w Polsce, Austrii i pozostałych krajach Unii Europejskiej.</p></details>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact-section">
+				<div class="contact-glow"></div>
 				<div class="container contact-grid">
-					<div>
-						<p class="eyebrow" data-i18n="contactEyebrow">Bezpłatna wycena</p>
-						<h2 data-i18n="contactTitle">Zamów prospekt i wstępny kosztorys</h2>
-						<p class="section-text" data-i18n="contactText">
-							Opisz projekt, a przygotujemy propozycję paneli LED dla Twojego obiektu
-							w Polsce lub Austrii.
-						</p>
-						<div class="contact-info">
-							<p><strong>Email:</strong> info@ledflex.example</p>
-							<p><strong>Obszar:</strong> Polska, Austria, UE</p>
-						</div>
-					</div>
-					<form class="quote-form" id="quoteForm">
-						<label
-							><span data-i18n="formName">Imię / firma</span
-							><input name="name" required
-						/></label>
-						<label
-							><span>Email</span><input name="email" type="email" required
-						/></label>
-						<label
-							><span data-i18n="formPhone">Telefon</span><input name="phone"
-						/></label>
-						<label
-							><span data-i18n="formCountry">Kraj montażu</span
-							><select name="country">
-								<option>Polska</option>
-								<option>Austria</option>
-								<option>Inny kraj UE</option>
-							</select></label
-						>
-						<label
-							><span data-i18n="formSize">Orientacyjny rozmiar ekranu</span
-							><input name="size" placeholder="np. 3 x 2 m"
-						/></label>
-						<label
-							><span data-i18n="formPlace">Miejsce montażu</span
-							><select name="place">
-								<option data-i18n="place1">Witryna sklepowa</option>
-								<option data-i18n="place2">Fasada szklana</option>
-								<option data-i18n="place3">Event / targi</option>
-								<option data-i18n="place4">Wnętrze</option>
-							</select></label
-						>
-						<label class="full"
-							><span data-i18n="formMessage">Opis projektu</span
-							><textarea
-								name="message"
-								rows="4"
-								placeholder="Wymiary, lokalizacja, termin, zdjęcia miejsca..."
-							></textarea>
-						</label>
-						<button class="btn primary full" type="submit" data-i18n="formBtn">
-							Wyślij zapytanie
-						</button>
-						<p class="form-note" data-i18n="formNote">
-							Po kliknięciu otworzy się wiadomość e-mail z gotowym zapytaniem.
-						</p>
+					<div class="contact-copy reveal"><p class="eyebrow"><span></span><span data-i18n="contactEyebrow">Bezpłatna konsultacja</span></p><h2 data-i18n="contactTitle">Zobaczmy, co możemy rozświetlić.</h2><p data-i18n="contactText">Wyślij kilka informacji. Wrócimy z propozycją technologii i wstępną wyceną.</p><div class="contact-meta"><div><small data-i18n="contactResponse">Odpowiedź</small><strong data-i18n="contactResponseValue">w ciągu 1 dnia roboczego</strong></div><div><small>Obszar</small><strong>Polska, Austria, UE</strong></div></div></div>
+					<form class="quote-form reveal" id="quoteForm">
+						<div class="field"><label for="name" data-i18n="formName">Imię / firma</label><input id="name" name="name" required autocomplete="name" /></div>
+						<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" /></div>
+						<div class="field"><label for="phone" data-i18n="formPhone">Telefon</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
+						<div class="field"><label for="country" data-i18n="formCountry">Kraj montażu</label><select id="country" name="country"><option>Polska</option><option>Austria</option><option data-i18n="countryOther">Inny kraj UE</option></select></div>
+						<div class="field full"><label for="message" data-i18n="formMessage">Opowiedz krótko o projekcie</label><textarea id="message" name="message" rows="4" required data-i18n-placeholder="formPlaceholder" placeholder="Wymiary, lokalizacja, termin, oczekiwany efekt..."></textarea></div>
+						<button class="btn primary full" type="submit"><span data-i18n="formBtn">Wyślij zapytanie</span><b>↗</b></button>
+						<p class="form-note full" data-i18n="formNote">Wiadomość trafi bezpośrednio do naszego zespołu w Telegramie.</p>
+						<div class="form-status full" id="formStatus" role="status" aria-live="polite"></div>
 					</form>
 				</div>
 			</section>
 		</main>
 
 		<footer class="footer">
-			<div class="container footer-grid">
-				<p>© <span id="year"></span> LEDFlex</p>
-				<p data-i18n="footerText">
-					Sprzedaż i montaż elastycznych transparentnych paneli LED.
-				</p>
+			<div class="container footer-top">
+				<div class="footer-brand"><a class="logo" href="#top"><i></i>LED<span>FLEX</span></a><p data-i18n="footerText">Transparentne systemy LED dla architektury, retailu i wydarzeń.</p></div>
+				<div class="footer-links"><div><small data-i18n="footerNav">Nawigacja</small><a href="#about" data-i18n="navAbout">O panelach</a><a href="#works" data-i18n="navWorks">Realizacje</a><a href="#faq">FAQ</a></div><div><small data-i18n="footerContact">Kontakt</small><a href="#contact" data-i18n="heroBtn">Bezpłatna wycena</a><a href="mailto:info@ledflex.example">info@ledflex.example</a></div><div><small>Obszar</small><span>Polska</span><span>Austria</span><span>Unia Europejska</span></div></div>
 			</div>
+			<div class="container footer-bottom"><span>© <span id="year"></span> LEDFlex</span><span data-i18n="footerRights">Wszystkie prawa zastrzeżone.</span><a href="#top" class="back-top" aria-label="Do góry">↑</a></div>
+			<div class="footer-marquee" aria-hidden="true">LIGHT • SPACE • MOTION •</div>
 		</footer>
 
+		<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true"><button class="lightbox-close" aria-label="Zamknij">×</button><button class="lightbox-prev" aria-label="Poprzednie">←</button><img src="" alt="" /><button class="lightbox-next" aria-label="Następne">→</button><p></p></div>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

@@ -1,251 +1,38 @@
-/** @format */
-
-const translations = {
-	pl: {
-		navAbout: 'O panelach',
-		navWorks: 'Realizacje',
-		navProcess: 'Jak pracujemy',
-		navContact: 'Wycena',
-		heroEyebrow: 'Polska • Austria • Europa',
-		heroTitle: 'Elastyczne transparentne panele LED dla nowoczesnej reklamy',
-		heroText:
-			'Projektujemy, dostarczamy i montujemy lekkie panele LED na witrynach, szklanych fasadach, stoiskach targowych, showroomach i eventach.',
-		heroBtn: 'Zamów wycenę',
-		heroBtn2: 'Zobacz przykłady',
-		stat1: 'widoczność reklamy',
-		stat2: 'montaż na miejscu',
-		stat3: 'energooszczędna technologia',
-		screenText: 'Transparent display',
-		float1: 'Witryny sklepowe',
-		float2: 'Eventy i showroomy',
-		aboutEyebrow: 'Technologia',
-		aboutTitle: 'Co to są elastyczne transparentne panele LED?',
-		aboutText:
-			'To cienkie i lekkie moduły LED, które można instalować na szkle lub konstrukcjach reklamowych. Pozwalają wyświetlać dynamiczne treści, a jednocześnie zachować efekt przejrzystości powierzchni.',
-		feature1Title: 'Sprzedaż paneli',
-		feature1Text:
-			'Dobieramy typ paneli, rozdzielczość, jasność i system sterowania pod konkretny obiekt.',
-		feature2Title: 'Profesjonalny montaż',
-		feature2Text:
-			'Montaż na witrynach, ścianach szklanych, ekspozycjach, konstrukcjach eventowych i reklamowych.',
-		feature3Title: 'Konfiguracja treści',
-		feature3Text:
-			'Pomagamy uruchomić system, przygotować formaty reklam i przeszkolić obsługę.',
-		whyEyebrow: 'Zastosowanie',
-		whyTitle: 'Gdzie sprawdzają się panele LED?',
-		use1: 'Witryny sklepowe i galerie handlowe',
-		use2: 'Restauracje, kluby i hotele',
-		use3: 'Targi, eventy i scenografie',
-		use4: 'Showroomy samochodowe i premium',
-		use5: 'Biura sprzedaży i recepcje',
-		use6: 'Fasady szklane i ekspozycje',
-		worksEyebrow: 'Realizacje / przykłady',
-		worksTitle: 'Przykłady zastosowań',
-		worksText:
-			'Poniżej możesz później wstawić zdjęcia wykonanych prac. Na start zostawiliśmy estetyczne miejsca pod portfolio.',
-		work1: 'Witryna sklepu',
-		work2: 'Ściana LED w showroomie',
-		work3: 'Stoisko targowe',
-		work4: 'Restauracja / klub',
-		processEyebrow: 'Proces',
-		processTitle: 'Jak pracujemy?',
-		step1Title: 'Kontakt i potrzeby',
-		step1Text: 'Wysyłasz wymiary, lokalizację, zdjęcia miejsca i oczekiwany efekt.',
-		step2Title: 'Dobór rozwiązania',
-		step2Text: 'Proponujemy typ paneli, konstrukcję, sterowanie i orientacyjną cenę.',
-		step3Title: 'Montaż i uruchomienie',
-		step3Text: 'Dostarczamy, montujemy, konfigurujemy ekran i przekazujemy instrukcję obsługi.',
-		contactEyebrow: 'Bezpłatna wycena',
-		contactTitle: 'Zamów prospekt i wstępny kosztorys',
-		contactText:
-			'Opisz projekt, a przygotujemy propozycję paneli LED dla Twojego obiektu w Polsce lub Austrii.',
-		formName: 'Imię / firma',
-		formPhone: 'Telefon',
-		formCountry: 'Kraj montażu',
-		formSize: 'Orientacyjny rozmiar ekranu',
-		formPlace: 'Miejsce montażu',
-		formMessage: 'Opis projektu',
-		formBtn: 'Wyślij zapytanie',
-		formNote: 'Po kliknięciu otworzy się wiadomość e-mail z gotowym zapytaniem.',
-		place1: 'Witryna sklepowa',
-		place2: 'Fasada szklana',
-		place3: 'Event / targi',
-		place4: 'Wnętrze',
-		footerText: 'Sprzedaż i montaż elastycznych transparentnych paneli LED.',
-	},
-	de: {
-		navAbout: 'Über Panels',
-		navWorks: 'Referenzen',
-		navProcess: 'Ablauf',
-		navContact: 'Anfrage',
-		heroEyebrow: 'Polen • Österreich • Europa',
-		heroTitle: 'Flexible transparente LED-Panels für moderne Werbung',
-		heroText:
-			'Wir planen, liefern und montieren leichte LED-Panels für Schaufenster, Glasfassaden, Messestände, Showrooms und Events.',
-		heroBtn: 'Angebot anfragen',
-		heroBtn2: 'Beispiele ansehen',
-		stat1: 'Werbung sichtbar',
-		stat2: 'Montage vor Ort',
-		stat3: 'energieeffiziente Technologie',
-		screenText: 'Transparent display',
-		float1: 'Schaufenster',
-		float2: 'Events & Showrooms',
-		aboutEyebrow: 'Technologie',
-		aboutTitle: 'Was sind flexible transparente LED-Panels?',
-		aboutText:
-			'Dünne und leichte LED-Module zur Montage auf Glas oder Werbekonstruktionen. Sie zeigen dynamische Inhalte und erhalten gleichzeitig einen transparenten visuellen Effekt.',
-		feature1Title: 'Verkauf von Panels',
-		feature1Text:
-			'Wir wählen Paneltyp, Auflösung, Helligkeit und Steuerung passend zum Objekt aus.',
-		feature2Title: 'Professionelle Montage',
-		feature2Text:
-			'Installation auf Schaufenstern, Glaswänden, Ausstellungen, Event- und Werbekonstruktionen.',
-		feature3Title: 'Content-Konfiguration',
-		feature3Text:
-			'Wir helfen beim Start des Systems, bei Werbeformaten und bei der Einweisung des Teams.',
-		whyEyebrow: 'Anwendung',
-		whyTitle: 'Wo funktionieren LED-Panels am besten?',
-		use1: 'Schaufenster und Einkaufszentren',
-		use2: 'Restaurants, Clubs und Hotels',
-		use3: 'Messen, Events und Bühnenbilder',
-		use4: 'Auto- und Premium-Showrooms',
-		use5: 'Verkaufsbüros und Rezeptionen',
-		use6: 'Glasfassaden und Ausstellungen',
-		worksEyebrow: 'Referenzen / Beispiele',
-		worksTitle: 'Anwendungsbeispiele',
-		worksText:
-			'Hier können später Fotos realer Projekte eingefügt werden. Zum Start sind elegante Portfolio-Platzhalter vorbereitet.',
-		work1: 'Schaufenster',
-		work2: 'LED-Wand im Showroom',
-		work3: 'Messestand',
-		work4: 'Restaurant / Club',
-		processEyebrow: 'Ablauf',
-		processTitle: 'Wie arbeiten wir?',
-		step1Title: 'Kontakt & Bedarf',
-		step1Text: 'Sie senden Maße, Standort, Fotos und den gewünschten Effekt.',
-		step2Title: 'Lösungsauswahl',
-		step2Text:
-			'Wir schlagen Panels, Konstruktion, Steuerung und eine Richtpreis-Kalkulation vor.',
-		step3Title: 'Montage & Start',
-		step3Text:
-			'Wir liefern, montieren, konfigurieren den Screen und übergeben die Bedienhinweise.',
-		contactEyebrow: 'Kostenlose Kalkulation',
-		contactTitle: 'Prospekt und Erstangebot anfordern',
-		contactText:
-			'Beschreiben Sie Ihr Projekt, und wir erstellen einen Vorschlag für LED-Panels in Polen oder Österreich.',
-		formName: 'Name / Firma',
-		formPhone: 'Telefon',
-		formCountry: 'Montageland',
-		formSize: 'Ungefähre Bildschirmgröße',
-		formPlace: 'Montageort',
-		formMessage: 'Projektbeschreibung',
-		formBtn: 'Anfrage senden',
-		formNote: 'Nach dem Klick öffnet sich eine E-Mail mit vorbereiteter Anfrage.',
-		place1: 'Schaufenster',
-		place2: 'Glasfassade',
-		place3: 'Event / Messe',
-		place4: 'Innenbereich',
-		footerText: 'Verkauf und Montage flexibler transparenter LED-Panels.',
-	},
-	en: {
-		navAbout: 'About panels',
-		navWorks: 'Projects',
-		navProcess: 'How we work',
-		navContact: 'Quote',
-		heroEyebrow: 'Poland • Austria • Europe',
-		heroTitle: 'Flexible transparent LED panels for modern advertising',
-		heroText:
-			'We design, supply and install lightweight LED panels for shop windows, glass façades, exhibition stands, showrooms and events.',
-		heroBtn: 'Request a quote',
-		heroBtn2: 'See examples',
-		stat1: 'advertising visibility',
-		stat2: 'on-site installation',
-		stat3: 'energy-efficient technology',
-		screenText: 'Transparent display',
-		float1: 'Shop windows',
-		float2: 'Events & showrooms',
-		aboutEyebrow: 'Technology',
-		aboutTitle: 'What are flexible transparent LED panels?',
-		aboutText:
-			'Thin and lightweight LED modules that can be installed on glass or advertising structures. They display dynamic content while keeping a transparent visual effect.',
-		feature1Title: 'Panel sales',
-		feature1Text:
-			'We select panel type, resolution, brightness and control system for each location.',
-		feature2Title: 'Professional installation',
-		feature2Text:
-			'Installation on shop windows, glass walls, displays, event structures and advertising constructions.',
-		feature3Title: 'Content setup',
-		feature3Text: 'We help launch the system, prepare advertising formats and train your team.',
-		whyEyebrow: 'Application',
-		whyTitle: 'Where do LED panels work best?',
-		use1: 'Shop windows and shopping malls',
-		use2: 'Restaurants, clubs and hotels',
-		use3: 'Trade fairs, events and stage design',
-		use4: 'Automotive and premium showrooms',
-		use5: 'Sales offices and receptions',
-		use6: 'Glass façades and displays',
-		worksEyebrow: 'Projects / examples',
-		worksTitle: 'Application examples',
-		worksText:
-			'You can later replace these blocks with photos of completed projects. For now, elegant portfolio placeholders are prepared.',
-		work1: 'Shop window',
-		work2: 'LED wall in showroom',
-		work3: 'Trade fair stand',
-		work4: 'Restaurant / club',
-		processEyebrow: 'Process',
-		processTitle: 'How we work',
-		step1Title: 'Contact & needs',
-		step1Text: 'You send dimensions, location, photos and the desired visual effect.',
-		step2Title: 'Solution selection',
-		step2Text: 'We propose panels, structure, control system and an estimated price.',
-		step3Title: 'Installation & launch',
-		step3Text: 'We deliver, install, configure the screen and provide basic user instructions.',
-		contactEyebrow: 'Free estimate',
-		contactTitle: 'Request a brochure and initial cost estimate',
-		contactText:
-			'Describe your project and we will prepare a LED panel proposal for your location in Poland or Austria.',
-		formName: 'Name / company',
-		formPhone: 'Phone',
-		formCountry: 'Installation country',
-		formSize: 'Approximate screen size',
-		formPlace: 'Installation place',
-		formMessage: 'Project description',
-		formBtn: 'Send request',
-		formNote: 'After clicking, an email with a prepared request will open.',
-		place1: 'Shop window',
-		place2: 'Glass façade',
-		place3: 'Event / trade fair',
-		place4: 'Interior',
-		footerText: 'Sales and installation of flexible transparent LED panels.',
-	},
+const translations={
+pl:{navAbout:'O panelach',navWorks:'Realizacje',navProcess:'Jak pracujemy',navFaq:'FAQ',navContact:'Wycena',heroEyebrow:'Obraz, który nie zasłania przestrzeni',heroTitle:'Transparentna technologia. <em>Widoczny efekt.</em>',heroText:'Projektujemy i montujemy elastyczne ekrany LED, które zamieniają szkło w dynamiczny nośnik premium — bez utraty światła i widoku.',heroBtn:'Bezpłatna wycena',heroBtn2:'Zobacz realizacje',stat1:'transparentności',stat2:'widoczności',stat3:'możliwości formy',screenText:'Transparent display systems',float1:'Do 6000 nit',float2:'Ultralekka konstrukcja',aboutEyebrow:'Technologia',aboutTitle:'Czym są elastyczne transparentne panele LED?',aboutText:'To cienkie, lekkie moduły montowane bezpośrednio na szkle lub konstrukcji. Wyświetlają jasne, dynamiczne treści, pozostając niemal niewidoczne po wyłączeniu.',feature1Title:'Elastyczność formy',feature1Text:'Ekran dopasowuje się do łuków, narożników i niestandardowych powierzchni.',feature2Title:'Prawdziwa transparentność',feature2Text:'Światło, ekspozycja i architektura pozostają widoczne przez aktywny ekran.',feature3Title:'Efekt bez kompromisów',feature3Text:'Wysoka jasność i intensywny kolor przy minimalnej wadze konstrukcji.',whyEyebrow:'Zastosowanie',whyTitle:'Jedna technologia.<br>Nieskończenie wiele scen.',whyText:'Od subtelnego komunikatu na witrynie po wielkoformatową scenografię — projektujemy rozwiązanie wokół przestrzeni i celu marki.',use1:'Witryny i galerie handlowe',use2:'Hotele i restauracje',use3:'Targi i wydarzenia',use4:'Showroomy premium',use5:'Biura i recepcje',worksEyebrow:'Application examples',worksTitle:'Technologia w przestrzeni',work1:'Witryna premium',work2:'Szklany ekran 90°',work3:'Automotive experience',work4:'Instalacja muzealna',work5:'Scenografia 360°',work6:'Ekran narożny',galleryHint:'Przeciągnij, aby zobaczyć więcej • Kliknij, aby powiększyć',processEyebrow:'Od pomysłu do światła',processTitle:'Bierzemy odpowiedzialność za cały proces.',processText:'Dobieramy technologię, projektujemy układ, montujemy i uruchamiamy treści. Jeden zespół, jeden standard jakości.',processLink:'Porozmawiajmy o projekcie ↗',step1Title:'Konsultacja',step1Text:'Poznajemy przestrzeń, cel i oczekiwany efekt.',step2Title:'Projekt i wycena',step2Text:'Dobieramy moduły, sterowanie oraz sposób montażu.',step3Title:'Montaż',step3Text:'Instalujemy system i dbamy o każdy detal wykończenia.',step4Title:'Start i wsparcie',step4Text:'Konfigurujemy treści i szkolimy zespół.',faqTitle:'Najczęstsze pytania',faqText:'Krótko o tym, co zwykle warto wiedzieć przed pierwszą wyceną.',faq1q:'Czy ekran ogranicza widoczność przez szybę?',faq1a:'Nieznacznie. W zależności od modelu transparentność sięga około 90%, więc wnętrze i światło dzienne pozostają widoczne.',faq2q:'Czy panel można dopasować do łuku?',faq2a:'Tak. Elastyczne moduły pozwalają tworzyć łuki, narożniki, cylindry i niestandardowe formy.',faq3q:'Jak wygląda sterowanie treścią?',faq3a:'Materiały można planować i aktualizować z komputera lub chmury. Przy uruchomieniu konfigurujemy system i szkolimy obsługę.',faq4q:'Ile trwa realizacja?',faq4a:'Standardowo od 3 do 6 tygodni od akceptacji projektu. Termin zależy od wielkości i stopnia indywidualizacji.',faq5q:'Czy zapewniacie montaż poza Polską?',faq5a:'Tak. Realizujemy projekty w Polsce, Austrii i pozostałych krajach Unii Europejskiej.',contactEyebrow:'Bezpłatna konsultacja',contactTitle:'Zobaczmy, co możemy rozświetlić.',contactText:'Wyślij kilka informacji. Wrócimy z propozycją technologii i wstępną wyceną.',contactResponse:'Odpowiedź',contactResponseValue:'w ciągu 1 dnia roboczego',formName:'Imię / firma',formPhone:'Telefon',formCountry:'Kraj montażu',countryOther:'Inny kraj UE',formMessage:'Opowiedz krótko o projekcie',formPlaceholder:'Wymiary, lokalizacja, termin, oczekiwany efekt...',formBtn:'Wyślij zapytanie',formNote:'Wiadomość trafi bezpośrednio do naszego zespołu w Telegramie.',footerText:'Transparentne systemy LED dla architektury, retailu i wydarzeń.',footerNav:'Nawigacja',footerContact:'Kontakt',footerRights:'Wszystkie prawa zastrzeżone.',sending:'Wysyłamy…',sent:'Dziękujemy. Zapytanie zostało wysłane.',sendError:'Nie udało się wysłać. Spróbuj ponownie lub napisz do nas bezpośrednio.'},
+en:{navAbout:'About',navWorks:'Projects',navProcess:'Process',navFaq:'FAQ',navContact:'Get a quote',heroEyebrow:'A picture that does not hide the space',heroTitle:'Transparent technology. <em>Visible impact.</em>',heroText:'We design and install flexible LED screens that turn glass into a dynamic premium medium — without losing daylight or the view.',heroBtn:'Free consultation',heroBtn2:'View projects',stat1:'transparency',stat2:'visibility',stat3:'form freedom',screenText:'Transparent display systems',float1:'Up to 6000 nits',float2:'Ultra-light structure',aboutEyebrow:'Technology',aboutTitle:'What are flexible transparent LED panels?',aboutText:'Thin, lightweight modules mounted directly onto glass or a supporting structure. They display bright dynamic content while becoming almost invisible when switched off.',feature1Title:'Flexible by design',feature1Text:'The screen follows curves, corners and custom architectural surfaces.',feature2Title:'True transparency',feature2Text:'Daylight, displays and architecture remain visible through an active screen.',feature3Title:'Impact without compromise',feature3Text:'High brightness and rich colour with minimal structural weight.',whyEyebrow:'Applications',whyTitle:'One technology.<br>Endless scenes.',whyText:'From a subtle message in a shop window to a large-scale event set — every solution is designed around the space and the brand objective.',use1:'Retail windows & shopping malls',use2:'Hotels & restaurants',use3:'Trade fairs & events',use4:'Premium showrooms',use5:'Offices & receptions',worksEyebrow:'Application examples',worksTitle:'Technology in space',work1:'Premium storefront',work2:'90° glass display',work3:'Automotive experience',work4:'Museum installation',work5:'360° stage design',work6:'Corner display',galleryHint:'Drag to see more • Click to enlarge',processEyebrow:'From idea to light',processTitle:'We own the entire process.',processText:'We select the technology, design the layout, install the system and launch the content. One team, one quality standard.',processLink:'Let’s discuss your project ↗',step1Title:'Consultation',step1Text:'We learn about your space, goal and desired effect.',step2Title:'Design & estimate',step2Text:'We select the modules, controls and installation method.',step3Title:'Installation',step3Text:'We install the system and take care of every detail.',step4Title:'Launch & support',step4Text:'We configure content and train your team.',faqTitle:'Frequently asked questions',faqText:'A few things worth knowing before the first estimate.',faq1q:'Does the screen block the view through glass?',faq1a:'Only slightly. Depending on the model, transparency reaches approximately 90%, leaving the interior and daylight visible.',faq2q:'Can the panel follow a curved surface?',faq2a:'Yes. Flexible modules can form curves, corners, cylinders and custom shapes.',faq3q:'How is the content controlled?',faq3a:'Content can be scheduled and updated from a computer or the cloud. We configure the system and train your team at launch.',faq4q:'How long does delivery take?',faq4a:'Typically 3–6 weeks after design approval, depending on scale and customisation.',faq5q:'Do you install outside Poland?',faq5a:'Yes. We deliver projects in Poland, Austria and throughout the European Union.',contactEyebrow:'Free consultation',contactTitle:'Let’s see what we can illuminate.',contactText:'Send us a few details. We will return with a technology recommendation and initial estimate.',contactResponse:'Response time',contactResponseValue:'within one business day',formName:'Name / company',formPhone:'Phone',formCountry:'Installation country',countryOther:'Other EU country',formMessage:'Tell us briefly about your project',formPlaceholder:'Dimensions, location, timing, desired effect...',formBtn:'Send request',formNote:'Your message will go directly to our team in Telegram.',footerText:'Transparent LED systems for architecture, retail and events.',footerNav:'Navigation',footerContact:'Contact',footerRights:'All rights reserved.',sending:'Sending…',sent:'Thank you. Your request has been sent.',sendError:'Could not send the message. Please try again or contact us directly.'},
+de:{navAbout:'Über Panels',navWorks:'Referenzen',navProcess:'Ablauf',navFaq:'FAQ',navContact:'Angebot',heroEyebrow:'Ein Bild, das den Raum nicht verdeckt',heroTitle:'Transparente Technologie. <em>Sichtbare Wirkung.</em>',heroText:'Wir planen und montieren flexible LED-Displays, die Glas in ein dynamisches Premium-Medium verwandeln — ohne Licht und Ausblick zu verlieren.',heroBtn:'Kostenlose Beratung',heroBtn2:'Referenzen ansehen',stat1:'Transparenz',stat2:'Sichtbarkeit',stat3:'Formfreiheit',screenText:'Transparent display systems',float1:'Bis zu 6000 Nits',float2:'Ultraleichte Konstruktion',aboutEyebrow:'Technologie',aboutTitle:'Was sind flexible transparente LED-Panels?',aboutText:'Dünne, leichte Module zur direkten Montage auf Glas oder Konstruktionen. Sie zeigen helle dynamische Inhalte und sind ausgeschaltet nahezu unsichtbar.',feature1Title:'Flexible Form',feature1Text:'Das Display passt sich Rundungen, Ecken und individuellen Flächen an.',feature2Title:'Echte Transparenz',feature2Text:'Tageslicht, Ausstellung und Architektur bleiben durch das aktive Display sichtbar.',feature3Title:'Wirkung ohne Kompromisse',feature3Text:'Hohe Helligkeit und intensive Farben bei minimalem Konstruktionsgewicht.',whyEyebrow:'Anwendung',whyTitle:'Eine Technologie.<br>Unendlich viele Szenen.',whyText:'Von der subtilen Botschaft im Schaufenster bis zur großformatigen Inszenierung — wir entwickeln rund um Raum und Markenziel.',use1:'Schaufenster & Einkaufszentren',use2:'Hotels & Restaurants',use3:'Messen & Events',use4:'Premium-Showrooms',use5:'Büros & Empfänge',worksEyebrow:'Anwendungsbeispiele',worksTitle:'Technologie im Raum',work1:'Premium-Schaufenster',work2:'90° Glasdisplay',work3:'Automotive Experience',work4:'Museumsinstallation',work5:'360° Bühnendesign',work6:'Eckdisplay',galleryHint:'Ziehen für mehr • Klicken zum Vergrößern',processEyebrow:'Von der Idee zum Licht',processTitle:'Wir verantworten den gesamten Prozess.',processText:'Wir wählen die Technologie, planen das Layout, montieren das System und starten die Inhalte. Ein Team, ein Qualitätsstandard.',processLink:'Projekt besprechen ↗',step1Title:'Beratung',step1Text:'Wir lernen Raum, Ziel und gewünschten Effekt kennen.',step2Title:'Planung & Angebot',step2Text:'Wir wählen Module, Steuerung und Montageart.',step3Title:'Montage',step3Text:'Wir installieren das System bis ins letzte Detail.',step4Title:'Start & Support',step4Text:'Wir konfigurieren Inhalte und schulen Ihr Team.',faqTitle:'Häufige Fragen',faqText:'Wissenswertes vor der ersten Kalkulation.',faq1q:'Beeinträchtigt das Display die Sicht durch Glas?',faq1a:'Nur geringfügig. Je nach Modell beträgt die Transparenz bis zu 90%, sodass Innenraum und Tageslicht sichtbar bleiben.',faq2q:'Lässt sich das Panel an Rundungen anpassen?',faq2a:'Ja. Flexible Module ermöglichen Rundungen, Ecken, Zylinder und individuelle Formen.',faq3q:'Wie werden Inhalte gesteuert?',faq3a:'Inhalte lassen sich per Computer oder Cloud planen und aktualisieren. Wir konfigurieren das System und schulen Ihr Team.',faq4q:'Wie lange dauert die Umsetzung?',faq4a:'Üblicherweise 3–6 Wochen nach der Freigabe, abhängig von Größe und Individualisierung.',faq5q:'Montieren Sie auch außerhalb Polens?',faq5a:'Ja. Wir realisieren Projekte in Polen, Österreich und der gesamten Europäischen Union.',contactEyebrow:'Kostenlose Beratung',contactTitle:'Sehen wir, was wir zum Leuchten bringen.',contactText:'Senden Sie uns einige Angaben. Sie erhalten eine Technologieempfehlung und erste Kalkulation.',contactResponse:'Antwort',contactResponseValue:'innerhalb eines Werktages',formName:'Name / Firma',formPhone:'Telefon',formCountry:'Montageland',countryOther:'Anderes EU-Land',formMessage:'Erzählen Sie kurz von Ihrem Projekt',formPlaceholder:'Maße, Ort, Termin, gewünschter Effekt...',formBtn:'Anfrage senden',formNote:'Ihre Nachricht geht direkt an unser Team in Telegram.',footerText:'Transparente LED-Systeme für Architektur, Retail und Events.',footerNav:'Navigation',footerContact:'Kontakt',footerRights:'Alle Rechte vorbehalten.',sending:'Wird gesendet…',sent:'Vielen Dank. Ihre Anfrage wurde gesendet.',sendError:'Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.'}
 };
 
-let currentLang = 'en';
-const setLanguage = lang => {
-	currentLang = lang;
-	document.documentElement.lang = lang;
-	document.querySelectorAll('[data-i18n]').forEach(el => {
-		const key = el.dataset.i18n;
-		if (translations[lang][key]) el.textContent = translations[lang][key];
-	});
-	document
-		.querySelectorAll('.lang')
-		.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
-};
+let currentLang='pl';
+function setLanguage(lang){currentLang=lang;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=translations[lang]?.[el.dataset.i18n];if(value)el.innerHTML=value});document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{const value=translations[lang]?.[el.dataset.i18nPlaceholder];if(value)el.placeholder=value});document.querySelectorAll('.lang').forEach(btn=>btn.classList.toggle('active',btn.dataset.lang===lang));localStorage.setItem('ledflex-language',lang)}
+setLanguage(localStorage.getItem('ledflex-language')||'pl');
+document.querySelectorAll('.lang').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
+document.getElementById('year').textContent=new Date().getFullYear();
+window.addEventListener('scroll',()=>document.querySelector('.header').classList.toggle('scrolled',scrollY>18),{passive:true});
 
-setLanguage(currentLang);
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 
-document
-	.querySelectorAll('.lang')
-	.forEach(btn => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
-document.getElementById('year').textContent = new Date().getFullYear();
+const gallery=document.getElementById('gallery');
+document.querySelector('.gallery-next').addEventListener('click',()=>gallery.scrollBy({left:430,behavior:'smooth'}));
+document.querySelector('.gallery-prev').addEventListener('click',()=>gallery.scrollBy({left:-430,behavior:'smooth'}));
 
-document.getElementById('quoteForm').addEventListener('submit', function (e) {
-	e.preventDefault();
-	const data = Object.fromEntries(new FormData(this).entries());
-	const subject = encodeURIComponent('LED Flex Panels - quote request');
-	const body = encodeURIComponent(
-		`Name / company: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nCountry: ${data.country}\nScreen size: ${data.size}\nPlace: ${data.place}\n\nProject description:\n${data.message}`
-	);
-	window.location.href = `mailto:info@ledflex.example?subject=${subject}&body=${body}`;
-});
+const works=[...document.querySelectorAll('.work')];
+const lightbox=document.getElementById('lightbox');
+const lightboxImage=lightbox.querySelector('img');
+const lightboxCaption=lightbox.querySelector('p');
+let activeWork=0;
+function showWork(index){activeWork=(index+works.length)%works.length;const work=works[activeWork];lightboxImage.src=work.dataset.full;lightboxImage.alt=work.querySelector('img').alt;lightboxCaption.textContent=work.querySelector('strong').textContent}
+function openLightbox(index){showWork(index);lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');lightbox.querySelector('.lightbox-close').focus()}
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');works[activeWork].focus()}
+works.forEach((work,index)=>work.addEventListener('click',()=>openLightbox(index)));
+lightbox.querySelector('.lightbox-close').addEventListener('click',closeLightbox);
+lightbox.querySelector('.lightbox-prev').addEventListener('click',()=>showWork(activeWork-1));
+lightbox.querySelector('.lightbox-next').addEventListener('click',()=>showWork(activeWork+1));
+lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox()});
+document.addEventListener('keydown',event=>{if(!lightbox.classList.contains('open'))return;if(event.key==='Escape')closeLightbox();if(event.key==='ArrowLeft')showWork(activeWork-1);if(event.key==='ArrowRight')showWork(activeWork+1)});
+
+const form=document.getElementById('quoteForm');
+const formStatus=document.getElementById('formStatus');
+form.addEventListener('submit',async event=>{event.preventDefault();const button=form.querySelector('button[type="submit"]');const buttonLabel=button.querySelector('span');const original=buttonLabel.textContent;button.disabled=true;buttonLabel.textContent=translations[currentLang].sending;formStatus.className='form-status full';formStatus.textContent='';try{const response=await fetch('/api/telegram',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...Object.fromEntries(new FormData(form).entries()),language:currentLang,source:location.href})});if(!response.ok)throw new Error('send failed');form.reset();formStatus.className='form-status full success';formStatus.textContent=translations[currentLang].sent}catch(error){formStatus.className='form-status full error';formStatus.textContent=translations[currentLang].sendError}finally{button.disabled=false;buttonLabel.textContent=original}});
